@@ -16,29 +16,86 @@
 
 
 
-    <div class="img-container border border-dark m-auto mt-5 w-25 h-25 position-relative" style="border-width: 10px !important">
+    <div class="img-container border border-dark m-auto mt-5 col-2 position-relative" style="border-width: 10px !important;">
 
-        <img src="/home/abdelrhman/Downloads/adult-teeth.png" class="img-fluid w-100 border border-warning">
+        <img src="adult-teeth.png" class="img-fluid w-100 border border-warning">
         <div    class="position-absolute border border-success left-0"
                 style="border-width: 5px !important; height: 85%; top: 7%; width: 80%;">
 
             <div class="p-2 h-50 border border-primary"></div>
-            <div class="p-2 h-50 border border-danger" style="border-radius: 50%/15% 15% 75% 75%;overflow: hidden;padding-top: 27px !important;">
-                <div class="border border-dark" style="height: calc(110%/6);"></div>
+            <div class="p-2 h-50 border border-danger position-relative" style="border-radius: 50%/15% 15% 75% 75%;overflow: hidden;padding-top: 27px !important;">
+                <div class="d-flex flex-column position-absolute border border-dark p-2 start-0 top-0 left-0"
+                        style="width: 20%;
+                                height: 70%;
+                                padding: 0 !important;
+                                transform: rotate(-15deg);
+                                top: 11% !important;
+                                left: 4% !important;
+                                border-radius: 45%;">
+
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                </div>
+
+                <div class="row align-items-end m-0 p-0 position-absolute border border-dark start-50 translate-middle"
+                        style="width: 60%;
+                                height: 28%;
+                                bottom: -15%;
+                                border-radius: 50%/35% 25% 50% 80%">
+
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                    <div class="tooth h-100 col-2 m-0 p-0"></div>
+                </div>
+                <div class="position-absolute right-0 border border-dark p-2 end-0"
+                        style="
+                        top: 11%;
+                        width: 20%;
+                        padding: 0 !important;
+                        height: 70%;
+                        transform: rotate(19deg);
+                        border-radius: 50%/35% 25% 50% 80%"
+                    >
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                    <div class="tooth col-10 m-0" style="height: 20%;"></div>
+                </div>
+                <!-- <div class="border border-dark" style="height: calc(110%/6);"></div>
                 <div class="border border-dark" style="height: calc(110%/6)"></div>
                 <div class="border border-dark" style="height: calc(110%/6)"></div>
                 <div class="border border-dark" style="height: calc(110%/6)"></div>
                 <div class="border border-dark" style="height: calc(110%/6)"></div>
-                <div class="border border-dark" style="height: calc(110%/6)"></div>
+                <div class="border border-dark" style="height: calc(110%/6)"></div> -->
             </div>
         </div>
         
 
     </div>
 
+    <div class="info col-2 border border-dark position-absolute top-50 p-4" style="right: 20%; height: 40%;">
+        <p class="d-none">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.
+        </p>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        
+        $('.tooth').hover(function () {
+           $('.info > p').toggleClass('d-none');
+        });
+
+    </script>
+
 </body>
 </html>
 
